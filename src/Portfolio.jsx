@@ -47,18 +47,39 @@ const Portfolio = () => {
   };
 
   const projects = [
+
+     
+        {
+      title: "Batminton Court Booking System",
+      description: "A comprehensive court booking system with real-time availability and user-friendly interface.",
+      tech: ["Figma"],
+      link: "https://www.figma.com/design/UnrK8FXuaM4GLoZf57bj5d/Batminton-Court?node-id=0-1&t=F4BTPNlHMHXBvESu-1",
+      icon: "🏸",
+      gradient: "from-green-400 via-blue-500 to-purple-600"
+    },
+
+        {
+      title: "Audit Management System",
+      description: "A robust audit management system with advanced reporting and analytics features.",
+      tech: ["Figma"],
+      link: "https://rajishiji45.wixstudio.com/spices/category/all-products",
+      icon: "📊",
+      gradient: "from-green-400 via-blue-500 to-purple-600"
+    },
+
     {
-      title: "Farm Management System",
+      title: "ECart System for Spices",
       description: "Revolutionary farm management platform with AI-driven analytics and real-time monitoring capabilities.",
       tech: ["Figma", "HTML", "HTMX", "CSS", "JavaScript"],
-      icon: "🌾",
+      link: "https://rajishiji45.wixstudio.com/spices/category/all-products",
+      icon: "🌶",
       gradient: "from-green-400 via-blue-500 to-purple-600"
     },
     {
-      title: "Krishi Vigyan Kendra",
+      title: "Krishi Nxt",
       description: "Comprehensive agricultural knowledge platform serving thousands of farmers across Kerala.",
       tech: ["Web Development", "CMS", "API Integration"],
-      link: "https://www.mitrakvk.org/",
+      link: "https://aadithyana66.wixsite.com/krishinext",
       icon: "🌱",
       gradient: "from-blue-400 via-purple-500 to-pink-500"
     },
@@ -71,18 +92,19 @@ const Portfolio = () => {
       gradient: "from-yellow-400 via-orange-500 to-red-500"
     },
     {
-      title: "International Energy Festival",
+      title: "System Society of India",
       description: "Government portal for Kerala's premier energy festival with advanced CMS capabilities.",
       tech: ["Wix Studio", "Figma", "CMS", "JavaScript"],
-      link: "https://iefk.in",
+      link: "https://aadithyana66.wixsite.com/ssin",
       icon: "⚡",
       gradient: "from-purple-400 via-pink-500 to-red-500"
     },
     {
-      title: "ECart & Inventory System",
+      title: "True Will Health",
       description: "Full-stack e-commerce solution with advanced inventory management and analytics.",
       tech: ["Full Stack", "Database", "Admin Panel"],
-      icon: "🛒",
+      link: "https://aadithyana66.wixsite.com/truewill",
+      icon: "💊",
       gradient: "from-indigo-400 via-purple-500 to-pink-500"
     },
     {
