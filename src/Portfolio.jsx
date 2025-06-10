@@ -102,7 +102,7 @@ const Portfolio = () => {
     { name: "SQL Server", level: 75, icon: "🗄" },
     { name: "HTML5/CSS3", level: 95, icon: "🎨" },
     { name: "Tailwind CSS", level: 90, icon: "💨" },
-    { name: "UI/UX Design", level: 85, icon: "🎭" },
+    { name: "UI/UX Design", level: 95, icon: "🎭" },
     { name: "Figma", level: 80, icon: "🎨" }
   ];
 
@@ -225,15 +225,15 @@ const Portfolio = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">20+</div>
+              <div className="text-3xl font-bold text-white">10+</div>
               <div className="text-sm text-blue-200">Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">1.5+</div>
+              <div className="text-3xl font-bold text-white">2.1+</div>
               <div className="text-sm text-blue-200">Years Exp</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">50+</div>
+              <div className="text-3xl font-bold text-white">5+</div>
               <div className="text-sm text-blue-200">Happy Clients</div>
             </div>
           </div>
