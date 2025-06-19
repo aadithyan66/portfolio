@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import {
   Mail,
@@ -95,7 +96,7 @@ const Portfolio = () => {
       tech: ["Figma"],
       link: "https://www.figma.com/design/UnrK8FXuaM4GLoZf57bj5d/Batminton-Court?node-id=0-1&t=F4BTPNlHMHXBvESu-1",
       icon: "🏸",
-      gradient: "from-green-400 via-blue-500 to-purple-600",
+      gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
 
     {
@@ -103,9 +104,9 @@ const Portfolio = () => {
       description:
         "A robust audit management system with advanced reporting and analytics features.",
       tech: ["Figma"],
-      link: "https://rajishiji45.wixstudio.com/spices/category/all-products",
+      link: "https://www.figma.com/design/h10cYNI0LtPDy7COOsgw7Q/Audit-App?node-id=298-2398&t=DtYooihVRplm733X-1",
       icon: "📊",
-      gradient: "from-green-400 via-blue-500 to-purple-600",
+      gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
 
     {
@@ -115,7 +116,7 @@ const Portfolio = () => {
       tech: ["Figma", "HTML", "HTMX", "CSS", "JavaScript"],
       link: "https://rajishiji45.wixstudio.com/spices/category/all-products",
       icon: "🌶",
-      gradient: "from-green-400 via-blue-500 to-purple-600",
+      gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
     {
       title: "Krishi Nxt",
@@ -124,7 +125,7 @@ const Portfolio = () => {
       tech: ["Web Development", "CMS", "API Integration"],
       link: "https://aadithyana66.wixsite.com/krishinext",
       icon: "🌱",
-      gradient: "from-blue-400 via-purple-500 to-pink-500",
+      gradient: "from-indigo-600 via-purple-600 to-slate-600",
     },
     {
       title: "VGuard Solar Solutions",
@@ -133,7 +134,7 @@ const Portfolio = () => {
       tech: ["Wix Studio", "Figma", "JavaScript", "API"],
       link: "https://www.vguardsolartvm.com/",
       icon: "☀",
-      gradient: "from-yellow-400 via-orange-500 to-red-500",
+      gradient: "from-slate-600 via-gray-600 to-zinc-600",
     },
     {
       title: "System Society of India",
@@ -142,7 +143,7 @@ const Portfolio = () => {
       tech: ["Wix Studio", "Figma", "CMS", "JavaScript"],
       link: "https://aadithyana66.wixsite.com/ssin",
       icon: "⚡",
-      gradient: "from-purple-400 via-pink-500 to-red-500",
+      gradient: "from-gray-600 via-slate-600 to-neutral-600",
     },
     {
       title: "True Will Health",
@@ -151,7 +152,7 @@ const Portfolio = () => {
       tech: ["Full Stack", "Database", "Admin Panel"],
       link: "https://aadithyana66.wixsite.com/truewill",
       icon: "💊",
-      gradient: "from-indigo-400 via-purple-500 to-pink-500",
+      gradient: "from-indigo-600 via-blue-600 to-slate-600",
     },
     {
       title: "Green Ranni Foods",
@@ -160,7 +161,7 @@ const Portfolio = () => {
       tech: ["E-commerce", "Payment Gateway", "CMS"],
       link: "https://greenranni.com/",
       icon: "🥬",
-      gradient: "from-green-400 via-emerald-500 to-teal-500",
+      gradient: "from-slate-600 via-gray-600 to-zinc-600",
     },
   ];
 
@@ -195,7 +196,7 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-xl border-b border-gray-200 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">
               DS
             </div>
 
@@ -213,15 +214,15 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 hover:text-purple-600 ${
+                  className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 hover:text-blue-600 ${
                     activeSection === item.toLowerCase()
-                      ? "text-purple-600"
+                      ? "text-blue-600"
                       : "text-gray-700"
                   }`}
                 >
                   {item}
                   {activeSection === item.toLowerCase() && (
-                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full" />
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full" />
                   )}
                 </button>
               ))}
@@ -255,7 +256,7 @@ const Portfolio = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left py-3 px-4 text-gray-700 hover:text-purple-600 hover:bg-gray-50 rounded-lg transition-all duration-300"
+                  className="block w-full text-left py-3 px-4 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-lg transition-all duration-300"
                 >
                   {item}
                 </button>
@@ -265,22 +266,22 @@ const Portfolio = () => {
         </div>
       </nav>
 
-      {/* Hero Section - Purple Gradient Background */}
+      {/* Hero Section - Professional Gradient Background */}
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center px-6 relative bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white overflow-hidden"
+        className="min-h-screen flex items-center justify-center px-6 relative bg-gradient-to-br from-slate-900 via-gray-800 to-zinc-800 text-white overflow-hidden"
       >
         {/* Animated background elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-pink-300/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
         </div>
 
         <div className="text-center z-10 max-w-6xl mx-auto">
           <div className="mb-8">
             <div className="relative w-40 h-40 mx-auto mb-8  ">
-              <div className=" mt-5 absolute inset-0 bg-gradient-to-r from-white/30 to-yellow-200/40 rounded-full animate-spin-slow"></div>
+              <div className=" mt-5 absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/40 rounded-full animate-spin-slow"></div>
               <div className="  mt-5 absolute inset-2 bg-white rounded-full flex items-center justify-center shadow-2xl ring-4 ring-white/20">
                 <img
                   src="images/Profile.jpeg"
@@ -292,19 +293,19 @@ const Portfolio = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-yellow-200 via-yellow-400 to-orange-300 bg-clip-text text-transparent animate-pulse">
+            <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-slate-200 bg-clip-text text-transparent animate-pulse">
               Aadithyan DS
             </span>
           </h1>
 
-          <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-300 mb-12 max-w-3xl mx-auto">
             Software Engineer • UI/UX Designer
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
             <button
               onClick={() => scrollToSection("projects")}
-              className="bg-white text-purple-600 px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center group font-semibold hover:bg-yellow-100"
+              className="bg-blue-600 text-white px-8 py-4 rounded-full hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center group font-semibold hover:bg-blue-700"
             >
               <span className="mr-2">View My Work</span>
               <ArrowRight
@@ -314,12 +315,12 @@ const Portfolio = () => {
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-purple-600 transition-all duration-300 transform hover:-translate-y-1 font-semibold"
+              className="border-2 border-slate-300 text-slate-300 px-8 py-4 rounded-full hover:bg-slate-300 hover:text-slate-800 transition-all duration-300 transform hover:-translate-y-1 font-semibold"
             >
               Let's Connect
             </button>
             <a
-              className="border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-purple-600 transition-all duration-300 transform hover:-translate-y-1 font-semibold"
+              className="border-2 border-slate-300 text-slate-300 px-8 py-4 rounded-full hover:bg-slate-300 hover:text-slate-800 transition-all duration-300 transform hover:-translate-y-1 font-semibold"
               href="/images/aadithyan-ds-cv.pdf"
             >
               View CV
@@ -330,15 +331,15 @@ const Portfolio = () => {
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
               <div className="text-3xl font-bold text-white">10+</div>
-              <div className="text-sm text-white/80">Projects</div>
+              <div className="text-sm text-slate-300">Projects</div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
               <div className="text-3xl font-bold text-white">2.1+</div>
-              <div className="text-sm text-white/80">Years Exp</div>
+              <div className="text-sm text-slate-300">Years Exp</div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
               <div className="text-3xl font-bold text-white">5+</div>
-              <div className="text-sm text-white/80">Happy Clients</div>
+              <div className="text-sm text-slate-300">Happy Clients</div>
             </div>
           </div>
         </div>
@@ -348,7 +349,7 @@ const Portfolio = () => {
       <section id="about" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">
               About Me
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -359,9 +360,9 @@ const Portfolio = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 border-l-4 border-purple-600 hover:shadow-lg transition-all duration-300">
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 border-l-4 border-blue-600 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <Zap className="text-purple-600 mr-3" size={24} />
+                  <Zap className="text-blue-600 mr-3" size={24} />
                   <h3 className="text-xl font-semibold text-gray-900">
                     Innovation Driven
                   </h3>
@@ -372,9 +373,9 @@ const Portfolio = () => {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-pink-50 to-orange-50 rounded-2xl p-6 border-l-4 border-pink-600 hover:shadow-lg transition-all duration-300">
+              <div className="bg-gradient-to-r from-indigo-50 to-slate-50 rounded-2xl p-6 border-l-4 border-indigo-600 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <Target className="text-pink-600 mr-3" size={24} />
+                  <Target className="text-indigo-600 mr-3" size={24} />
                   <h3 className="text-xl font-semibold text-gray-900">
                     Detail Oriented
                   </h3>
@@ -385,9 +386,9 @@ const Portfolio = () => {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-2xl p-6 border-l-4 border-orange-600 hover:shadow-lg transition-all duration-300">
+              <div className="bg-gradient-to-r from-slate-50 to-gray-50 rounded-2xl p-6 border-l-4 border-slate-600 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <Heart className="text-orange-600 mr-3" size={24} />
+                  <Heart className="text-slate-600 mr-3" size={24} />
                   <h3 className="text-xl font-semibold text-gray-900">
                     User Focused
                   </h3>
@@ -400,31 +401,31 @@ const Portfolio = () => {
             </div>
 
             <div className="relative">
-              <div className="bg-gradient-to-br from-gray-50 to-purple-50 rounded-3xl p-8 border border-gray-200 shadow-xl">
-                <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <div className="bg-gradient-to-br from-gray-50 to-slate-50 rounded-3xl p-8 border border-gray-200 shadow-xl">
+                <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">
                   My Journey
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-3 h-3 bg-purple-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
+                    <div className="w-3 h-3 bg-blue-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                     <span className="text-gray-700">
                       Started coding in college
                     </span>
                   </div>
                   <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-3 h-3 bg-pink-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
+                    <div className="w-3 h-3 bg-indigo-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                     <span className="text-gray-700">
                       Specialized in web development
                     </span>
                   </div>
                   <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-3 h-3 bg-orange-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
+                    <div className="w-3 h-3 bg-slate-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                     <span className="text-gray-700">
                       Joined JitTec IT Solutions
                     </span>
                   </div>
                   <div className="flex items-center group hover:translate-x-2 transition-transform duration-300">
-                    <div className="w-3 h-3 bg-purple-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
+                    <div className="w-3 h-3 bg-gray-600 rounded-full mr-4 group-hover:scale-125 transition-transform duration-300"></div>
                     <span className="text-gray-700">
                       Building amazing projects daily
                     </span>
@@ -436,15 +437,15 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Experience Section - Warm Gradient Background */}
+      {/* Experience Section - Professional Gradient Background */}
       <section
         id="experience"
-        className="py-20 px-6 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white overflow-hidden relative"
+        className="py-20 px-6 bg-gradient-to-br from-slate-900 via-gray-800 to-zinc-800 text-white overflow-hidden relative"
       >
         {/* Background decoration */}
         <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-80 h-80 bg-yellow-300/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-10 right-10 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
         <div className="max-w-6xl mx-auto relative z-10">
@@ -460,15 +461,15 @@ const Portfolio = () => {
                 <h3 className="text-3xl font-bold mb-2 text-white">
                   {experience.role}
                 </h3>
-                <p className="text-xl text-white/90 mb-2">
+                <p className="text-xl text-slate-200 mb-2">
                   {experience.company}
                 </p>
-                <p className="text-white/80 flex items-center">
+                <p className="text-slate-300 flex items-center">
                   <MapPin size={16} className="mr-2" />
                   {experience.location}
                 </p>
               </div>
-              <div className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold mt-4 lg:mt-0 shadow-lg">
+              <div className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold mt-4 lg:mt-0 shadow-lg">
                 {experience.duration}
               </div>
             </div>
@@ -482,7 +483,7 @@ const Portfolio = () => {
                   <div className="text-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
                     {highlight.split(" ")[0]}
                   </div>
-                  <p className="text-white/90 group-hover:text-white transition-colors duration-300">
+                  <p className="text-slate-200 group-hover:text-white transition-colors duration-300">
                     {highlight.substring(highlight.indexOf(" ") + 1)}
                   </p>
                 </div>
@@ -496,7 +497,7 @@ const Portfolio = () => {
       <section id="projects" className="py-20 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">
               Featured Projects
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -509,13 +510,13 @@ const Portfolio = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-purple-300 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-2xl"
+                className="group relative bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-blue-300 transition-all duration-500 hover:-translate-y-2 shadow-lg hover:shadow-2xl"
               >
                 <div className="relative p-6">
                   <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                     {project.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-purple-600 transition-all duration-300">
+                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-all duration-300">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
@@ -526,7 +527,7 @@ const Portfolio = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 px-3 py-1 rounded-full text-xs border border-purple-200 hover:from-purple-200 hover:to-pink-200 transition-all duration-300"
+                        className="bg-gradient-to-r from-slate-100 to-gray-100 text-slate-700 px-3 py-1 rounded-full text-xs border border-slate-200 hover:from-slate-200 hover:to-gray-200 transition-all duration-300"
                       >
                         {tech}
                       </span>
@@ -538,7 +539,7 @@ const Portfolio = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-purple-600 hover:text-pink-600 transition-colors duration-300 group/link font-medium"
+                      className="inline-flex items-center text-blue-600 hover:text-indigo-600 transition-colors duration-300 group/link font-medium"
                     >
                       <span className="mr-2">View Project</span>
                       <ExternalLink
@@ -554,15 +555,15 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Skills Section - Warm Gradient Background */}
+      {/* Skills Section - Professional Gradient Background */}
       <section
         id="skills"
-        className="py-20 px-6 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white overflow-hidden relative"
+        className="py-20 px-6 bg-gradient-to-br from-slate-900 via-gray-800 to-zinc-800 text-white overflow-hidden relative"
       >
         {/* Background decoration */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse delay-500"></div>
-          <div className="absolute bottom-20 right-20 w-64 h-64 bg-yellow-300/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute bottom-20 right-20 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
         </div>
 
         <div className="max-w-6xl mx-auto relative z-10">
@@ -587,13 +588,13 @@ const Portfolio = () => {
                       {skill.name}
                     </span>
                   </div>
-                  <span className="text-sm text-white/80 bg-white/10 px-3 py-1 rounded-full">
+                  <span className="text-sm text-slate-300 bg-white/10 px-3 py-1 rounded-full">
                     {skill.level}%
                   </span>
                 </div>
                 <div className="w-full bg-white/20 rounded-full h-2">
                   <div
-                    className="bg-gradient-to-r from-white to-yellow-200 h-2 rounded-full transition-all duration-1000 ease-out shadow-lg"
+                    className="bg-gradient-to-r from-blue-500 to-indigo-500 h-2 rounded-full transition-all duration-1000 ease-out shadow-lg"
                     style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
@@ -607,33 +608,34 @@ const Portfolio = () => {
       <section id="education" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-700 to-gray-800 bg-clip-text text-transparent">
               Education
             </h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200 hover:shadow-xl transition-all duration-300 group">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200 hover:shadow-xl transition-all duration-300 group">
               <div className="flex items-center mb-6">
                 <GraduationCap
-                  className="text-purple-600 mr-4 group-hover:scale-110 transition-transform duration-300"
+                  className="text-blue-600 mr-4 group-hover:scale-110 transition-transform duration-300"
                   size={32}
                 />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">
                     Bachelor of Computer Applications
                   </h3>
-                  <p className="text-purple-600 font-semibold">BCA</p>
+                  <p className="text-blue-600 font-semibold">BCA</p>
                 </div>
               </div>
               <p className="text-gray-700 mb-2">
                 Christ Nagar College, Thiruvananthapuram
               </p>
               <p className="text-gray-600 mb-4">CGPA: 6.5</p>
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-full text-sm inline-block shadow-lg">
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm inline-block shadow-lg">
                 2020 - 2023
               </div>
             </div>
+
 
             <div className="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8 border border-pink-200 hover:shadow-xl transition-all duration-300 group">
               <div className="flex items-center mb-6">
