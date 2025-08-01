@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   Mail,
@@ -89,8 +88,29 @@ const Portfolio = () => {
   };
 
   const projects = [
+
     {
-      title: "Batminton Court Booking System",
+      title: "EMC Course App",
+      description:
+        "A comprehensive course management system with real-time updates and user-friendly interface.",
+      tech: ["React.js", "Node.js", "MongoDB", "Express.js"],
+      link: "http://46.28.44.139:5175/",
+      icon: "📚",
+      gradient: "from-blue-600 via-indigo-600 to-purple-600",
+    },
+
+      {
+      title: "Jittec Course Web",
+      description:
+        "Dynamic course management system with real-time updates and user-friendly interface.",
+      tech: ["E-commerce", "Payment Gateway", "CMS"],
+      link: "https://aadithyana66.wixsite.com/jittec",
+      icon: "📚",
+      gradient: "from-slate-600 via-gray-600 to-zinc-600",
+    },
+
+    {
+      title: "Badminton Court Booking System",
       description:
         "A comprehensive court booking system with real-time availability and user-friendly interface.",
       tech: ["Figma"],
@@ -98,7 +118,6 @@ const Portfolio = () => {
       icon: "🏸",
       gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
-
     {
       title: "Audit Management System",
       description:
@@ -108,14 +127,13 @@ const Portfolio = () => {
       icon: "📊",
       gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
-
     {
       title: "ECart System for Spices",
       description:
-        "Revolutionary farm management platform with AI-driven analytics and real-time monitoring capabilities.",
+        "E-commerce platform for spice trading with comprehensive product management and shopping cart functionality.",
       tech: ["Figma", "HTML", "HTMX", "CSS", "JavaScript"],
       link: "https://rajishiji45.wixstudio.com/spices/category/all-products",
-      icon: "🌶",
+      icon: "🌶️",
       gradient: "from-blue-600 via-indigo-600 to-purple-600",
     },
     {
@@ -133,7 +151,7 @@ const Portfolio = () => {
         "Next-gen solar energy platform with advanced API integrations and dynamic pricing.",
       tech: ["Wix Studio", "Figma", "JavaScript", "API"],
       link: "https://www.vguardsolartvm.com/",
-      icon: "☀",
+      icon: "☀️",
       gradient: "from-slate-600 via-gray-600 to-zinc-600",
     },
     {
@@ -154,22 +172,14 @@ const Portfolio = () => {
       icon: "💊",
       gradient: "from-indigo-600 via-blue-600 to-slate-600",
     },
-    {
-      title: "Green Ranni Foods",
-      description:
-        "Premium organic food marketplace with seamless shopping experience.",
-      tech: ["E-commerce", "Payment Gateway", "CMS"],
-      link: "https://greenranni.com/",
-      icon: "🥬",
-      gradient: "from-slate-600 via-gray-600 to-zinc-600",
-    },
+  
   ];
 
   const skills = [
-    { name: "React.js", level: 90, icon: "⚛" },
+    { name: "React.js", level: 90, icon: "⚛️" },
     { name: "JavaScript", level: 85, icon: "🟨" },
     { name: "C# / .NET", level: 80, icon: "🔷" },
-    { name: "SQL Server", level: 75, icon: "🗄" },
+    { name: "SQL Server", level: 75, icon: "🗄️" },
     { name: "HTML5/CSS3", level: 95, icon: "🎨" },
     { name: "Tailwind CSS", level: 90, icon: "💨" },
     { name: "UI/UX Design", level: 95, icon: "🎭" },
@@ -188,6 +198,20 @@ const Portfolio = () => {
       "🤝 Led cross-functional teams in delivering high-impact solutions",
       "🔧 Integrated complex APIs and third-party services seamlessly",
     ],
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:aadithyana66@gmail.com";
+  };
+
+  const handleCVClick = () => {
+    // Create a dummy CV download - in real implementation, this would be a real PDF
+    const link = document.createElement('a');
+    link.href = '#';
+    link.download = 'aadithyan-ds-cv.pdf';
+    link.textContent = 'CV Download';
+    // In a real app, you'd have an actual PDF file to download
+    alert('CV download would start here. Please ensure you have the PDF file in your public folder.');
   };
 
   return (
@@ -232,6 +256,7 @@ const Portfolio = () => {
             <button
               className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
             >
               {isMenuOpen ? (
                 <X size={24} className="text-gray-700" />
@@ -274,26 +299,24 @@ const Portfolio = () => {
         {/* Animated background elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-slate-400/10 rounded-full blur-3xl animate-pulse"></div>
         </div>
 
         <div className="text-center z-10 max-w-6xl mx-auto">
           <div className="mb-8">
-            <div className="relative w-40 h-40 mx-auto mb-8  ">
-              <div className=" mt-5 absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/40 rounded-full animate-spin-slow"></div>
-              <div className="  mt-5 absolute inset-2 bg-white rounded-full flex items-center justify-center shadow-2xl ring-4 ring-white/20">
-                <img
-                  src="images/Profile.jpeg"
-                  alt="Aadithyan DS"
-                  className="w-full h-full rounded-full object-cover"
-                />
+            <div className="relative w-40 h-40 mx-auto mb-8">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-indigo-500/40 rounded-full animate-spin"></div>
+              <div className="absolute inset-2 bg-white rounded-full flex items-center justify-center shadow-2xl ring-4 ring-white/20">
+                <div className="w-full h-full rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold">
+                  AD
+                </div>
               </div>
             </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-slate-200 bg-clip-text text-transparent animate-pulse">
+            <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-slate-200 bg-clip-text text-transparent">
               Aadithyan DS
             </span>
           </h1>
@@ -319,12 +342,12 @@ const Portfolio = () => {
             >
               Let's Connect
             </button>
-            <a
+            <button
+              onClick={handleCVClick}
               className="border-2 border-slate-300 text-slate-300 px-8 py-4 rounded-full hover:bg-slate-300 hover:text-slate-800 transition-all duration-300 transform hover:-translate-y-1 font-semibold"
-              href="/images/aadithyan-ds-cv.pdf"
             >
               View CV
-            </a>
+            </button>
           </div>
 
           {/* Quick Stats */}
@@ -445,7 +468,7 @@ const Portfolio = () => {
         {/* Background decoration */}
         <div className="absolute inset-0">
           <div className="absolute top-10 right-10 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute bottom-10 left-10 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
         </div>
 
         <div className="max-w-6xl mx-auto relative z-10">
@@ -562,7 +585,7 @@ const Portfolio = () => {
       >
         {/* Background decoration */}
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl animate-pulse"></div>
         </div>
 
@@ -636,7 +659,6 @@ const Portfolio = () => {
               </div>
             </div>
 
-
             <div className="bg-gradient-to-br from-pink-50 to-orange-50 rounded-2xl p-8 border border-pink-200 hover:shadow-xl transition-all duration-300 group">
               <div className="flex items-center mb-6">
                 <GraduationCap
@@ -682,7 +704,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Contact Section - Blue Background */}
+      {/* Contact Section - Purple to Pink Gradient Background */}
       <section
         id="contact"
         className="py-20 px-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white"
@@ -692,7 +714,7 @@ const Portfolio = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Let's Work Together
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-purple-100 max-w-3xl mx-auto">
               Ready to bring your ideas to life? I'm always excited to work on
               new projects and collaborate with amazing people.
             </p>
@@ -705,7 +727,7 @@ const Portfolio = () => {
                 size={48}
               />
               <h3 className="text-xl font-bold mb-2 text-white">Email</h3>
-              <p className="text-blue-100">aadithyana66@gmail.com</p>
+              <p className="text-purple-100 break-all">aadithyana66@gmail.com</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 group hover:border-white/40 transition-all duration-300">
@@ -714,7 +736,8 @@ const Portfolio = () => {
                 size={48}
               />
               <h3 className="text-xl font-bold mb-2 text-white">Phone</h3>
-              <p className="text-blue-100">+91 6238620105 & 9188393114</p>
+              <p className="text-purple-100">+91 6238620105</p>
+              <p className="text-purple-100">+91 9188393114</p>
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/20 group hover:border-white/40 transition-all duration-300">
@@ -723,16 +746,14 @@ const Portfolio = () => {
                 size={48}
               />
               <h3 className="text-xl font-bold mb-2 text-white">Location</h3>
-              <p className="text-blue-100">Thiruvananthapuram, Kerala</p>
+              <p className="text-purple-100">Thiruvananthapuram, Kerala</p>
             </div>
           </div>
 
           <div className="text-center">
             <button
-              onClick={() =>
-                (window.location.href = "mailto:aadithyana66@gmail.com")
-              }
-              className="bg-white text-blue-600 px-12 py-4 rounded-full hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-lg font-semibold group"
+              onClick={handleEmailClick}
+              className="bg-white text-purple-600 px-12 py-4 rounded-full hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-lg font-semibold group"
             >
               <Mail
                 className="inline mr-3 group-hover:animate-bounce"
@@ -752,42 +773,6 @@ const Portfolio = () => {
           </p>
         </div>
       </footer>
-
-      {/* Custom Styles */}
-      <style jsx>{`
-        html {
-          scroll-behavior: smooth;
-        }
-
-        ::-webkit-scrollbar {
-          width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-          background: #f1f5f9;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
-          border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-        }
-
-        @media (max-width: 640px) {
-          .text-4xl {
-            font-size: 2.5rem;
-          }
-          .text-5xl {
-            font-size: 3rem;
-          }
-          .text-7xl {
-            font-size: 4rem;
-          }
-        }
-      `}</style>
     </div>
   );
 };
