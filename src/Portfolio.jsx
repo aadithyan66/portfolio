@@ -31,6 +31,7 @@ import {
   Heart,
 } from "lucide-react";
 
+
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -88,7 +89,13 @@ const Portfolio = () => {
   };
 
   const projects = [
-
+{
+  title: "CENKREDIT NON-BANKING Financial Management",
+  description: "End-to-end financial management system for NBFC operations.",
+  tech: [".NET", "SQLSERVER", "ANGULAR", "AZURE"],
+  icon: "📚",
+  gradient: "from-blue-600 via-indigo-600 to-purple-600",
+},
     {
       title: "EMC Course App",
       description:
