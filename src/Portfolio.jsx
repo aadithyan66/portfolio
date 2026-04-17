@@ -191,32 +191,32 @@ const skillCatMap = { "All Technologies": null, "Frontend": "Frontend", "Backend
 /* ─────────────────────── SVGs ─────────────────────── */
 const LayersIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 const CapIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="#fff"/>
+    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" fill="#fff" />
   </svg>
 );
 const StarIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#fff"/>
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#fff" />
   </svg>
 );
 const MailIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#fff"/>
+    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="#fff" />
   </svg>
 );
 const PhoneIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#fff"/>
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#fff" />
   </svg>
 );
 const PinIcon = () => (
   <svg viewBox="0 0 24 24">
-    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#fff"/>
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#fff" />
   </svg>
 );
 
@@ -304,12 +304,12 @@ export default function Portfolio() {
             that <em>perform.</em>
           </h1>
           <p className="hero-desc">
-            Building high-quality web applications and intuitive interfaces. 2+ years crafting enterprise software, e-commerce platforms, and user-centric design systems.
+            Building high-quality web applications and intuitive interfaces. 3+ years crafting enterprise software, e-commerce platforms, and user-centric design systems.
           </p>
           <div className="hero-btns">
             <button className="btn-red" onClick={() => goSec("projects")}>View Projects</button>
             <button className="btn-ghost" onClick={() => goSec("contact")}>Get in Touch</button>
-           <a href="https://aadithyan-d-s.tiiny.site/" target="_blank" rel="noopener noreferrer">
+            <a href="https://aadithyan-d-s.tiiny.site/" target="_blank" rel="noopener noreferrer">
               <button className="btn-ghost">Download CV</button>
             </a>
           </div>
@@ -320,10 +320,11 @@ export default function Portfolio() {
           <div className="hero-right-label">Career Overview</div>
           <div className="hero-stats">
             {[
-              { num: "10+", label: "Projects\nDelivered" },
-              { num: "2.1+", label: "Years\nExperience" },
-              { num: "5+", label: "Client\nPartnerships" },
-              { num: "40%", label: "Perf.\nOptimization" },
+              { num: "12+", label: "Projects\nDelivered" },
+              { num: "3+", label: "Years\nExperience" },
+              { num: "50%", label: "Perf.\nOptimization" },
+              { num: "6+", label: "Technologies.\nMastered" },
+              { num: "5+", label: "Client.\nDeliveries" }
             ].map((s) => (
               <div className="hstat" key={s.num}>
                 <span className="hstat-num">{s.num}</span>
@@ -363,10 +364,39 @@ export default function Portfolio() {
               <div className="sec-eyebrow"><div className="sec-eyebrow-line" /><span>Work History</span></div>
               <h2>Professional Experience</h2>
               <p style={{ fontSize: "0.9rem", color: "var(--text3)", lineHeight: 1.65, marginTop: 12 }}>
-                Currently working at JitTec IT Solutions delivering high-impact front-end engineering across enterprise and client-facing products.
+                Currently working at CFCICI Developed RESTful APIs using ASP.NET
+                Optimized SQL queries reducing response time.
+                Implemented stored procedures for banking modules (savings, withdrawals, ledger)
+                Fixed critical bugs improving system stability
               </p>
             </div>
             <div>
+              <div className="exp-main-card">
+                <div className="exp-toprow">
+                  <div>
+                    <div className="exp-role"> Software Engineer</div>
+                    <div className="exp-company"> CFCICI </div>
+                    <div className="exp-loc">COCHIN, Kerala, India</div>
+                  </div>
+                  <div className="exp-badge">July 2025 — Present</div>
+                </div>
+                <div className="exp-list">
+                  {[
+                    "Developed RESTful APIs using ASP.NET",
+                    "Optimized SQL queries reducing response time.",
+                    "Implemented stored procedures for banking modules (FD, GOLD LOAN, RD , LAD, savings, withdrawals, ledger)",
+                    "Led cross-functional teams delivering high-impact solutions on schedule",
+                    "Integrated complex APIs and third-party services seamlessly",
+                  ].map((h) => (
+                    <div className="exp-item" key={h}>
+                      <div className="exp-item-dot" />
+                      <span>{h}</span>
+                    </div>
+                  ))}
+                </div>
+              
+              
+              </div>
               <div className="exp-main-card">
                 <div className="exp-toprow">
                   <div>
@@ -374,7 +404,7 @@ export default function Portfolio() {
                     <div className="exp-company">JitTec IT Solutions</div>
                     <div className="exp-loc">Thiruvananthapuram, Kerala, India</div>
                   </div>
-                  <div className="exp-badge">May 2023 — Present</div>
+                  <div className="exp-badge">May 2023 — July 2025</div>
                 </div>
                 <div className="exp-list">
                   {[
@@ -390,6 +420,8 @@ export default function Portfolio() {
                     </div>
                   ))}
                 </div>
+              
+              
               </div>
             </div>
           </div>
@@ -427,8 +459,8 @@ export default function Portfolio() {
                   </div>
                   {p.link
                     ? <a className="proj-link" href={p.link} target="_blank" rel="noopener noreferrer">
-                        View Project <span className="proj-link-arrow">→</span>
-                      </a>
+                      View Project <span className="proj-link-arrow">→</span>
+                    </a>
                     : <span className="proj-nda">Enterprise · NDA</span>
                   }
                 </div>
