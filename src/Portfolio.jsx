@@ -296,7 +296,7 @@ export default function Portfolio() {
         <div className="hero-left">
           <div className="hero-eyebrow">
             <div className="hero-eyebrow-line" />
-            <span>Front End Engineer · JitTec IT Solutions</span>
+            <span>Software Engineer · CFCICI</span>
           </div>
           <h1>
             Engineering<br />
